@@ -2,45 +2,39 @@
   "placeholderImages": [
     {
       "id": "hero-bg",
-      "description": "Moody aesthetic cafe interior with soft lighting",
+      "description": "Moody aesthetic premium cafe interior with sophisticated lighting",
       "imageUrl": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2047&auto=format&fit=crop",
-      "imageHint": "cafe interior"
+      "imageHint": "luxury cafe"
     },
     {
-      "id": "coffee-1",
-      "description": "Premium latte art with heart shape",
-      "imageUrl": "https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=1937&auto=format&fit=crop",
+      "id": "coffee-art",
+      "description": "Artisan latte art in a crystal clear glass",
+      "imageUrl": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=2070&auto=format&fit=crop",
       "imageHint": "latte art"
     },
     {
-      "id": "juice-1",
-      "description": "Fresh cold-pressed orange juice with mint",
-      "imageUrl": "https://images.unsplash.com/photo-1613478223719-2ab802602423?q=80&w=1948&auto=format&fit=crop",
-      "imageHint": "fresh juice"
+      "id": "juice-premium",
+      "description": "Vibrant cold-pressed juice with floating botanical elements",
+      "imageUrl": "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?q=80&w=2000&auto=format&fit=crop",
+      "imageHint": "premium juice"
     },
     {
-      "id": "dessert-1",
-      "description": "Decadent chocolate lava cake with gold leaf",
-      "imageUrl": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=1946&auto=format&fit=crop",
-      "imageHint": "chocolate dessert"
+      "id": "dessert-luxury",
+      "description": "Gourmet pastry with edible gold and velvet texture",
+      "imageUrl": "https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=2000&auto=format&fit=crop",
+      "imageHint": "gourmet dessert"
     },
     {
-      "id": "gallery-1",
-      "description": "Cozy corner with books and coffee",
-      "imageUrl": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=2070&auto=format&fit=crop",
-      "imageHint": "cozy cafe"
+      "id": "interior-corner",
+      "description": "Exclusive velvet lounge seating with warm ambient glow",
+      "imageUrl": "https://images.unsplash.com/photo-1559925393-8be0ec41b5ec?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "exclusive lounge"
     },
     {
-      "id": "gallery-2",
-      "description": "Modern espresso machine detail",
-      "imageUrl": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=2070&auto=format&fit=crop",
-      "imageHint": "espresso machine"
-    },
-    {
-      "id": "gallery-3",
-      "description": "Customer enjoying a magical drink",
-      "imageUrl": "https://images.unsplash.com/photo-1525648199074-cee30ba79a4a?q=80&w=2070&auto=format&fit=crop",
-      "imageHint": "drinking coffee"
+      "id": "vibe-detail",
+      "description": "Close up of a magical signature cocktail/brew",
+      "imageUrl": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "magical drink"
     }
   ]
 }

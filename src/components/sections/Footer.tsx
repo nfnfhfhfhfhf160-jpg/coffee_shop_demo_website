@@ -1,70 +1,80 @@
 
-import { Coffee, Instagram, Twitter, Facebook, MapPin, Phone, Mail } from "lucide-react";
+import { Coffee, Instagram, Twitter, Facebook, MapPin, Phone, Mail, ArrowRight } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer id="about" className="bg-card/40 pt-24 pb-12 border-t px-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-        <div className="col-span-1 md:col-span-1 space-y-6 text-center md:text-left">
-          <div className="flex items-center justify-center md:justify-start gap-2">
-            <div className="p-2 bg-primary rounded-xl">
-              <Coffee className="w-6 h-6 text-background" />
+    <footer id="about" className="relative bg-card/40 pt-40 pb-20 overflow-hidden border-t border-white/5">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1200px] h-[600px] bg-primary/5 blur-[150px] -z-10" />
+      
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-20 mb-32">
+        <div className="md:col-span-5 space-y-12">
+          <div className="flex items-center gap-4">
+            <div className="p-4 bg-gradient-to-br from-primary to-secondary rounded-3xl shadow-xl shadow-primary/20">
+              <Coffee className="w-8 h-8 text-black" />
             </div>
-            <span className="font-headline font-bold text-2xl tracking-tight">Aura <span className="text-primary">Brews</span></span>
+            <span className="font-headline font-bold text-4xl tracking-tighter">Aura <span className="text-primary">Brews</span></span>
           </div>
-          <p className="text-muted-foreground leading-relaxed">
-            Crafting magical moments since 2024. Your premium destination for exquisite brews and heavenly bites in Downtown.
+          <p className="text-muted-foreground text-xl leading-relaxed font-medium">
+            Crafting liquid magic and gourmet memories since 2024. Your premium destination for the extraordinary.
           </p>
-          <div className="flex items-center justify-center md:justify-start gap-4">
-            <a href="#" className="p-2 glass-card rounded-full hover:text-primary transition-colors"><Instagram className="w-5 h-5" /></a>
-            <a href="#" className="p-2 glass-card rounded-full hover:text-primary transition-colors"><Twitter className="w-5 h-5" /></a>
-            <a href="#" className="p-2 glass-card rounded-full hover:text-primary transition-colors"><Facebook className="w-5 h-5" /></a>
+          <div className="flex items-center gap-6">
+            {[Instagram, Twitter, Facebook].map((Icon, i) => (
+              <a key={i} href="#" className="w-14 h-14 glass-morphism rounded-2xl flex items-center justify-center hover:text-primary hover:border-primary/50 transition-all hover:-translate-y-2">
+                <Icon className="w-6 h-6" />
+              </a>
+            ))}
           </div>
         </div>
 
-        <div className="space-y-6 text-center md:text-left">
-          <h4 className="font-headline font-bold text-lg">Operating Hours</h4>
-          <ul className="space-y-4 text-muted-foreground">
-            <li className="flex justify-between border-b border-white/5 pb-2"><span>Mon - Fri</span> <span>08:00 - 22:00</span></li>
-            <li className="flex justify-between border-b border-white/5 pb-2"><span>Saturday</span> <span>09:00 - 23:00</span></li>
-            <li className="flex justify-between"><span>Sunday</span> <span>09:00 - 20:00</span></li>
-          </ul>
-        </div>
+        <div className="md:col-span-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16">
+          <div className="space-y-8">
+            <h4 className="font-headline font-bold text-xl uppercase tracking-widest text-primary">Sanctuary Hours</h4>
+            <ul className="space-y-6 text-muted-foreground font-medium">
+              <li className="flex justify-between border-b border-white/5 pb-3"><span>Mon - Fri</span> <span className="text-white">08:00 - 22:00</span></li>
+              <li className="flex justify-between border-b border-white/5 pb-3"><span>Saturday</span> <span className="text-white">09:00 - 23:00</span></li>
+              <li className="flex justify-between"><span>Sunday</span> <span className="text-white">09:00 - 20:00</span></li>
+            </ul>
+          </div>
 
-        <div className="space-y-6 text-center md:text-left">
-          <h4 className="font-headline font-bold text-lg">Contact Us</h4>
-          <ul className="space-y-4 text-muted-foreground">
-            <li className="flex items-center justify-center md:justify-start gap-3">
-              <Phone className="w-5 h-5 text-primary" />
-              <span>+91 98765 88990</span>
-            </li>
-            <li className="flex items-center justify-center md:justify-start gap-3">
-              <Mail className="w-5 h-5 text-primary" />
-              <span>hello@aurabrews.com</span>
-            </li>
-            <li className="flex items-center justify-center md:justify-start gap-3">
-              <MapPin className="w-5 h-5 text-primary" />
-              <span>124, Heritage Street, Downtown</span>
-            </li>
-          </ul>
-        </div>
-
-        <div className="space-y-6 text-center md:text-left">
-          <h4 className="font-headline font-bold text-lg">Newsletter</h4>
-          <p className="text-sm text-muted-foreground">Get weekly magic in your inbox.</p>
-          <div className="flex gap-2">
-            <input 
-              type="email" 
-              placeholder="Your email" 
-              className="w-full bg-white/5 border border-white/10 rounded-full px-4 h-11 focus:outline-none focus:border-primary transition-colors text-sm"
-            />
-            <button className="bg-primary text-background font-bold h-11 px-6 rounded-full hover:bg-primary/90 transition-all text-sm">Join</button>
+          <div className="space-y-8">
+            <h4 className="font-headline font-bold text-xl uppercase tracking-widest text-primary">Get in Touch</h4>
+            <ul className="space-y-8 text-muted-foreground font-medium">
+              <li className="flex items-start gap-4 group cursor-pointer">
+                <Phone className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />
+                <span className="group-hover:text-white transition-colors">+91 98765 88990</span>
+              </li>
+              <li className="flex items-start gap-4 group cursor-pointer">
+                <MapPin className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />
+                <span className="group-hover:text-white transition-colors">124, Heritage Street, Downtown</span>
+              </li>
+              <li className="flex items-start gap-4 group cursor-pointer">
+                <Mail className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />
+                <span className="group-hover:text-white transition-colors">magic@aurabrews.com</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div className="space-y-8">
+            <h4 className="font-headline font-bold text-xl uppercase tracking-widest text-primary">Newsletter</h4>
+            <div className="space-y-4">
+              <div className="relative group">
+                <input 
+                  type="email" 
+                  placeholder="Your Email" 
+                  className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 h-16 focus:outline-none focus:border-primary transition-all font-medium text-sm group-hover:bg-white/10"
+                />
+                <button className="absolute right-2 top-2 h-12 w-12 bg-primary text-black rounded-xl flex items-center justify-center hover:scale-105 transition-all">
+                  <ArrowRight className="w-5 h-5" />
+                </button>
+              </div>
+              <p className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">Join the inner circle.</p>
+            </div>
           </div>
         </div>
       </div>
       
-      <div className="text-center pt-12 border-t border-white/5 text-xs text-muted-foreground">
-        © 2024 Aura Brews & Bites. All rights reserved. Designed for excellence.
+      <div className="text-center pt-20 border-t border-white/5 text-[10px] font-black uppercase tracking-[0.4em] text-muted-foreground">
+        © 2024 Aura Brews & Bites. Excellence as Standard.
       </div>
     </footer>
   );
