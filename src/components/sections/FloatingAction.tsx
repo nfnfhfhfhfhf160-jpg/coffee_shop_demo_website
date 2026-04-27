@@ -25,10 +25,9 @@ export function FloatingAction() {
               href="https://wa.me/919876588990" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all duration-500 animate-in slide-in-from-right-20 hover:shadow-[0_0_30px_rgba(37,211,102,0.4)]"
+              className="w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300"
             >
               <MessageCircle className="w-8 h-8" />
-              <div className="absolute inset-0 rounded-full animate-ping bg-[#25D366]/20 -z-10" />
             </a>
           </TooltipTrigger>
           <TooltipContent side="left" className="bg-black text-white border-none font-bold text-[10px] uppercase tracking-widest px-4 py-2">
