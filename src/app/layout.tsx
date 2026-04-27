@@ -1,10 +1,9 @@
-
 import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Aura Brews & Bites | Sip the Magic',
-  description: 'A hyper-premium cafe experience in the heart of Downtown.',
+  title: 'Heritage Brews | Pure Origins, Crafted for You',
+  description: 'A premium artisanal cafe experience in the heart of Downtown.',
 };
 
 export default function RootLayout({
