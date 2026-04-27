@@ -1,4 +1,5 @@
+
 import { config } from 'dotenv';
 config();
 
-import '@/ai/flows/personalized-menu-suggestions.ts';
+// AI flows removed from UI
