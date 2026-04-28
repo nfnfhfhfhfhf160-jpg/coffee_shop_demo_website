@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen bg-background">
+    <main className="relative min-h-screen bg-background overflow-x-hidden">
       {/* Subtle Background Elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none -z-10">
         <div className="glow-orb w-[600px] h-[600px] bg-secondary/10 top-0 left-0" />
@@ -20,18 +20,24 @@ export default function Home() {
       <div className="space-y-0">
         <Hero />
         
-        {/* Quality Pillars Section */}
-        <section className="py-24 px-6 relative z-10">
-          <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
-            {[
-              { title: "Direct Trade", icon: "🌱", desc: "We work directly with farmers to ensure the highest quality beans and fair wages." },
-              { title: "Micro-Roasted", icon: "🔥", desc: "Every batch is roasted daily in our micro-roastery to capture peak flavor notes." },
-              { title: "Brew Lab", icon: "🧪", desc: "Science meets art in our laboratory where we refine each extraction method." }
-            ].map((item, i) => (
-              <div key={i} className="glass-card p-12 rounded-[3.5rem] text-center space-y-6 group">
-                <div className="text-5xl group-hover:scale-125 transition-transform duration-500 inline-block">{item.icon}</div>
-                <h3 className="text-2xl font-bold font-headline text-primary">{item.title}</h3>
-                <p className="text-muted-foreground leading-relaxed font-medium">{item.desc}</p>
+        {/* Scrolling Marquee Section */}
+        <section className="py-16 relative z-10 overflow-hidden">
+          <div className="flex animate-marquee whitespace-nowrap">
+            {[...Array(2)].map((_, idx) => (
+              <div key={idx} className="flex items-center gap-12 px-6">
+                {[
+                  "Direct Trade",
+                  "Micro-Roasted Daily",
+                  "Ethically Sourced",
+                  "Artisan Crafted",
+                  "Premium Quality",
+                  "Small Batch",
+                ].map((text, i) => (
+                  <div key={i} className="flex items-center gap-4">
+                    <span className="text-2xl md:text-3xl font-headline font-bold text-primary/80">{text}</span>
+                    <span className="w-2 h-2 rounded-full bg-secondary/60" />
+                  </div>
+                ))}
               </div>
             ))}
           </div>

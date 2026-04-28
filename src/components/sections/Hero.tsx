@@ -76,7 +76,7 @@ export function Hero() {
                 </div>
 
                 {/* Floating Rating Card */}
-                <div className="absolute -top-10 -right-10 glass-morphism p-8 rounded-[3rem] border-white/60 animate-float">
+                <div className="absolute -top-6 right-2 glass-morphism p-6 rounded-[2rem] border-white/60 animate-float">
                   <div className="text-center">
                     <p className="text-4xl font-black font-headline text-secondary">4.9</p>
                     <p className="text-[10px] font-black uppercase tracking-widest text-muted-foreground mt-1">Heritage Rating</p>
