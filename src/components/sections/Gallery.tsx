@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 export function Gallery() {
   const images = [
     { 
-      imageUrl: "https://images.unsplash.com/photo-1559925393-8be0ec41b5ec?q=80&w=2070&auto=format&fit=crop", 
+      imageUrl: "/images/heritage-lounge.jpg", 
       title: 'The Heritage Lounge' 
     },
     { 
@@ -14,11 +14,11 @@ export function Gallery() {
       title: 'Liquid Gold' 
     },
     { 
-      imageUrl: "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?q=80&w=2000&auto=format&fit=crop", 
+      imageUrl: "/images/premium-juice.jpg", 
       title: 'Nature Unfiltered' 
     },
     { 
-      imageUrl: "https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=2000&auto=format&fit=crop", 
+      imageUrl: "/images/gourmet-dessert.jpg", 
       title: 'Sweet Alchemy' 
     },
   ];

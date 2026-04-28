@@ -1,19 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Button } from "@/components/ui/button";
 import { Sparkles, ArrowRight, Star, MapPin } from "lucide-react";
 
 export function Hero() {
-  const heroImg = PlaceHolderImages.find(img => img.id === 'hero-bg');
-
   return (
     <section className="relative min-h-[105vh] w-full flex items-center justify-center overflow-hidden hero-gradient pt-24">
       {/* Immersive Background */}
       <div className="absolute inset-0 z-0">
         <Image
-          src={heroImg?.imageUrl || ""}
+          src="/images/hero-bg.jpg"
           alt="Heritage Brews Interior"
           fill
           priority

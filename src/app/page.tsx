@@ -83,7 +83,7 @@ export default function Home() {
                 <div className="relative w-full h-[550px] glass-morphism p-3 rounded-[4rem] group-hover:rotate-1 transition-transform duration-700">
                   <div className="relative w-full h-full overflow-hidden rounded-[3.5rem]">
                     <Image 
-                      src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=2070"
+                      src="/images/cafe-vibe.jpg"
                       alt="Heritage Vibe"
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-[10s]"
