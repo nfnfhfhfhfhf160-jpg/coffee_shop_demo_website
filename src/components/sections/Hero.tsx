@@ -62,7 +62,7 @@ export function Hero() {
               <div className="tilt-inner glass-morphism p-4 rounded-[4rem] border-white/60 shadow-2xl">
                 <div className="relative h-[600px] w-full rounded-[3.5rem] overflow-hidden group">
                   <Image 
-                    src={PlaceHolderImages.find(i => i.id === 'vibe-detail')?.imageUrl || ""}
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/file_00000000995071faa77fc9f9cedfe9b5-Os5zn8lFSaNDWxBBuQiARjyMNsmwg0.png"
                     alt="Signature Brew"
                     fill
                     className="object-cover transition-transform duration-1000 group-hover:scale-110"

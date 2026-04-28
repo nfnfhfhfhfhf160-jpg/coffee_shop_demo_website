@@ -1,15 +1,26 @@
 "use client";
 
 import Image from "next/image";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Badge } from "@/components/ui/badge";
 
 export function Gallery() {
   const images = [
-    { ...PlaceHolderImages.find(i => i.id === 'interior-corner'), title: 'The Heritage Lounge' },
-    { ...PlaceHolderImages.find(i => i.id === 'coffee-art'), title: 'Liquid Gold' },
-    { ...PlaceHolderImages.find(i => i.id === 'juice-premium'), title: 'Nature Unfiltered' },
-    { ...PlaceHolderImages.find(i => i.id === 'dessert-luxury'), title: 'Sweet Alchemy' },
+    { 
+      imageUrl: "https://images.unsplash.com/photo-1559925393-8be0ec41b5ec?q=80&w=2070&auto=format&fit=crop", 
+      title: 'The Heritage Lounge' 
+    },
+    { 
+      imageUrl: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/file_00000000c2f471fa9a98305a0c82dcda-phsOCWK7hfTkC62wl3oIWh6JlIWRSi.png", 
+      title: 'Liquid Gold' 
+    },
+    { 
+      imageUrl: "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?q=80&w=2000&auto=format&fit=crop", 
+      title: 'Nature Unfiltered' 
+    },
+    { 
+      imageUrl: "https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=2000&auto=format&fit=crop", 
+      title: 'Sweet Alchemy' 
+    },
   ];
 
   return (
