@@ -9,7 +9,7 @@
     {
       "id": "coffee-art",
       "description": "Artisan latte art in a crystal clear glass",
-      "imageUrl": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=2070&auto=format&fit=crop",
+      "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/file_00000000c2f471fa9a98305a0c82dcda-phsOCWK7hfTkC62wl3oIWh6JlIWRSi.png",
       "imageHint": "latte art"
     },
     {
@@ -33,7 +33,7 @@
     {
       "id": "vibe-detail",
       "description": "Close up of a magical signature cocktail/brew",
-      "imageUrl": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1974&auto=format&fit=crop",
+      "imageUrl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/file_00000000995071faa77fc9f9cedfe9b5-Os5zn8lFSaNDWxBBuQiARjyMNsmwg0.png",
       "imageHint": "magical drink"
     }
   ]
